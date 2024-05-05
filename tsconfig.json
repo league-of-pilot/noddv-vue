@@ -1,5 +1,11 @@
 {
   "files": [],
+
+  // // enable latest features
+  // "lib": ["ESNext", "DOM", "DOM.Iterable"],
+  // "module": "esnext",
+  // "target": "esnext",
+
   "references": [
     {
       "path": "./tsconfig.node.json"

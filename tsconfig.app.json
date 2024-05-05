@@ -8,7 +8,10 @@
 
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@app/*": ["./src/app/*"],
+      "@views/*": ["./src/views/*"],
+      "@comps/*": ["./src/components/*"],
+      "@feat/*": ["./src/feature/*"]
     }
   }
 }
