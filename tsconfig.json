@@ -1,5 +1,22 @@
 {
   "files": [],
+
+  // enable latest features
+  "lib": ["ESNext", "DOM", "DOM.Iterable"],
+  "module": "esnext",
+  "target": "esnext",
+
+  "compilerOptions": {
+    "baseUrl": ".", // Đường dẫn base cho các import
+    "paths": {
+      // "@/*":src/app/*l/*"],
+      "@app/*": ["src/app/*"],
+      "@views/*": ["src/views/*"],
+      "@components/*": ["src/comps/*"],
+      "@feat/*": ["src/feature/*"]
+      // "~/*": ["src/*"] // Đường dẫn tương đối cho các import (alias)
+    }
+  },
   "references": [
     {
       "path": "./tsconfig.node.json"
