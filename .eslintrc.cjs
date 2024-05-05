@@ -44,6 +44,7 @@ module.exports = {
             position: 'after'
           }
         ],
+        pathGroupsExcludedImportTypes: ['builtin'],
         alphabetize: {
           order: 'asc',
           caseInsensitive: true
