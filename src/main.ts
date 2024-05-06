@@ -1,14 +1,20 @@
 import '@app/assets/main.css'
 
 import { createPinia } from 'pinia'
-import { createApp } from 'vue'
+import { createApp, markRaw } from 'vue'
 
 import App from '@app/App.vue'
 import router from '@views/router'
+import { piniaWithRouter } from '@app/stores/pinia-app'
 
 const app = createApp(App)
+// const pinia = createPinia()
 
-app.use(createPinia())
+// pinia.use(({ store }) => {
+//   store.router = markRaw(router)
+// })
+
+app.use(piniaWithRouter)
 app.use(router)
 
 app.mount('#app')
